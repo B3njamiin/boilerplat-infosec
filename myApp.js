@@ -7,9 +7,7 @@ let helmet = require('helmet');
 
 
 
-
-
-
+helmet.hidePoweredBy();
 
 
 
