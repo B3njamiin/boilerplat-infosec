@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const helmet = require('helmet');
 
-let ninetyDaysInSeconds = 90*24*60*60;
+var ninetyDaysInSeconds = 90*24*60*60;
 
 app.use(helmet.hidePoweredBy());
 //app.use(helmet.frameguard());
