@@ -10,8 +10,8 @@ app.use(helmet.frameguard({action: 'deny'}));
 app.use(helmet.xssFilter());
 app.use(helmet.noSniff());
 app.use(helmet.ieNoOpen());
-let timeInSeconds = 90*24*60*60;
-app.use(helmet.hsts({maxAge: timeInSeconds, force: true}));
+const ninetyDaysInSeconds = 90*24*60*60;
+app.use(helmet.hsts({maxAge: ninetyDaysInSeconds}));
 
 
 
